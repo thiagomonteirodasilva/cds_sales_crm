@@ -1,0 +1,30 @@
+<style>
+  
+</style>
+<div class="container">
+	<h1 class="text-center">
+		Welcome to {{title}}
+	</h1>
+	<hr />
+	<div class="row justify-content-center">
+		<div class="col-md-6">
+			<form (ngSubmit)="login(formId)" #formId="ngForm">
+				<div class="row">
+					<div class="form-group">
+						<label for="email">E-mail:</label>
+						<input type="text" name="email" ngModel class="form-control col-md-4">
+					</div>
+				</div>
+				<div class="row">
+					<div class="form-group">
+						<label for="password">Password:</label>
+						<input type="password" name="password" ngModel class="form-control col-md-4">
+					</div>
+				</div>
+				<div class="d-grid gap-2 mt-4">
+					<button class="btn btn-primary" type="Login"><fa-icon [icon]="fontAwesome.faDoorOpen"></fa-icon> Login</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
